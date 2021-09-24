@@ -1,24 +1,9 @@
-# untitled
+#Exo Vue with props
 
-## Project setup
-```
-npm install
-```
+##use props for parent
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+_this.$emit("addTask", task)_</br> event for take props into parent</br></br>
+_<Form @addTask="onAddTask"/>_</br>
+Listen event into parent</br></br>
+_Card :tasks="tasks"/>_ </br>
+Send props to children
